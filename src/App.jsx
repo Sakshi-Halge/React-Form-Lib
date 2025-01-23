@@ -1,15 +1,14 @@
-import { Button, CssBaseline, ThemeProvider } from '@mui/material'
+import { Button } from '@mui/material'
 import './App.css'
-import appTheme from './theme'
+import AppThemeConfig from './theme'
 
 function App() {
 
   return (
-    <ThemeProvider theme={appTheme}>
-      <CssBaseline />
+    <AppThemeConfig>
       <Button color="primary" variant='contained'>Primary Button</Button>
       <Button color="secondary" variant='contained'>Secondary Button</Button>
-    </ThemeProvider>
+    </AppThemeConfig>
   )
 }
 
