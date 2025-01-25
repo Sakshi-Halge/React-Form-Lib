@@ -1,15 +1,13 @@
-import { Button } from '@mui/material'
-import './App.css'
-import AppThemeConfig from './theme'
+import "./App.css";
+import DemoMUIComponents from "./components/demoMUIComponents";
+import AppThemeConfig from "./theme";
 
 function App() {
-
   return (
     <AppThemeConfig>
-      <Button color="primary" variant='contained'>Primary Button</Button>
-      <Button color="secondary" variant='contained'>Secondary Button</Button>
+      <DemoMUIComponents />
     </AppThemeConfig>
-  )
+  );
 }
 
-export default App
+export default App;
