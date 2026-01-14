@@ -1,11 +1,14 @@
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import DemoMUIComponents from "./components/demoMUIComponents";
 import AppThemeConfig from "./theme";
+import routes from "../routes";
+import Header from "./components/Header";
 
 function App() {
   return (
     <AppThemeConfig>
-      <DemoMUIComponents />
+      <Header />
+      <RouterProvider router={routes} />
     </AppThemeConfig>
   );
 }

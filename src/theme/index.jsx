@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { palette } from "./palette";
 import { useMemo } from "react";
 import AppGlobalStyles from "./globalStyles";
-import App from "../App";
 import AppComponentsOverrides from "./overrides";
 
 
@@ -15,7 +14,7 @@ const AppThemeConfig = ({ children }) => {
         }
     ), [])
 
-    const theme = createTheme(themeOptions);
+    const theme = useMemo(() => ( createTheme(themeOptions) ), [themeOptions]);
     theme.components = AppComponentsOverrides(theme);
 
     return (
